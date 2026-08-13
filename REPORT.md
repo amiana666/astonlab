@@ -170,7 +170,6 @@ To https://github.com/amiana666/astonlab.git
 ## На github делаем merge request по ветке в develop
 Во вкладке Pull requests -> New pull requests -> Мерджим с выбором веток: источник -> цель
 ## Создаем issue + ветка в самом гитхаб
-<<<<<<< HEAD
 Issues -> New issue
 vboxuser@Amireizel:~/hwlab/astonlab$ git pull
 remote: Enumerating objects: 1, done.
@@ -221,6 +220,10 @@ vboxuser@Amireizel:~/hwlab/astonlab$ git push
 Username for 'https://github.com': amiana666
 Password for 'https://amiana666@github.com': 
 Everything up-to-date
-## Делаем Pull requests
+## Делаем Pull requests на ветку develop, мерджим с веткой master
 Pull requests -> New pull requests
-
+## Устанавливаем версию ветки мастер 
+vboxuser@Amireizel:~/hwlab/astonlab$ git tag -a v1.0.0 -m "Первый стабильный релиз проекта AstonLab"
+vboxuser@Amireizel:~/hwlab/astonlab$ git push origin v1.0.0
+## Работа с Wiki проекта через веб-интерфейс GitHub
+Указываем название и описание в формате markdown
