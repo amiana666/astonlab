@@ -124,6 +124,104 @@ vboxuser@Amireizel:~/hwlab$ cd astonlab/
 vboxuser@Amireizel:~/hwlab/astonlab$ ls
 README.md  REPORT.md
 ## Коммитим последние изменения и пушим в удаленный репозиторий
+vboxuser@Amireizel:~/hwlab/astonlab$ git add .
+vboxuser@Amireizel:~/hwlab/astonlab$ git push --set-upstream origin introduction_to_linux
+Username for 'https://github.com': amiana666
+Password for 'https://amiana666@github.com': 
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'introduction_to_linux' on GitHub by visiting:
+remote:      https://github.com/amiana666/astonlab/pull/new/introduction_to_linux
+remote: 
+To https://github.com/amiana666/astonlab.git
+ * [new branch]      introduction_to_linux -> introduction_to_linux
+branch 'introduction_to_linux' set up to track 'origin/introduction_to_linux'.
+vboxuser@Amireizel:~/hwlab/astonlab$ git status
+On branch introduction_to_linux
+Your branch is up to date with 'origin/introduction_to_linux'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   .gitignore
+	modified:   README.md
+	new file:   REPORT.md
+
+vboxuser@Amireizel:~/hwlab/astonlab$ git commit -m "feat: add issue-branch"
+[introduction_to_linux 4e9d809] feat: add issue-branch
+ 3 files changed, 384 insertions(+), 1 deletion(-)
+ create mode 100644 REPORT.md
+vboxuser@Amireizel:~/hwlab/astonlab$ git status
+On branch introduction_to_linux
+Your branch is ahead of 'origin/introduction_to_linux' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+vboxuser@Amireizel:~/hwlab/astonlab$ git push
+Username for 'https://github.com': amiana666
+Password for 'https://amiana666@github.com': 
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 6.72 KiB | 6.72 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/amiana666/astonlab.git
+   ecc423f..4e9d809  introduction_to_linux -> introduction_to_linux
+## На github делаем merge request по ветке в develop
+Во вкладке Pull requests -> New pull requests -> Мерджим с выбором веток: источник -> цель
+## Создаем issue + ветка в самом гитхаб
+Issues -> New issue
+vboxuser@Amireizel:~/hwlab/astonlab$ git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 910 bytes | 910.00 KiB/s, done.
+From https://github.com/amiana666/astonlab
+   ecc423f..8abdbf0  develop    -> origin/develop
+Already up to date.
+vboxuser@Amireizel:~/hwlab/astonlab$ git checkout -b 2-issue-sql
+Switched to a new branch '2-issue-sql'
+vboxuser@Amireizel:~/hwlab/astonlab$ touch my_file.sql
+vboxuser@Amireizel:~/hwlab/astonlab$ git status
+On branch 2-issue-sql
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   REPORT.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	my_file.sql
+
+no changes added to commit (use "git add" and/or "git commit -a")
+vboxuser@Amireizel:~/hwlab/astonlab$ git add .
+vboxuser@Amireizel:~/hwlab/astonlab$ git commit -m "add my_file.sql"
+[2-issue-sql ef7cb13] add my_file.sql
+ 2 files changed, 46 insertions(+)
+ create mode 100644 my_file.sql
+vboxuser@Amireizel:~/hwlab/astonlab$ git push --set-upstream origin 2-issue-sql
+Username for 'https://github.com': amiana666
+Password for 'https://amiana666@github.com': 
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 1.10 KiB | 1.10 MiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for '2-issue-sql' on GitHub by visiting:
+remote:      https://github.com/amiana666/astonlab/pull/new/2-issue-sql
+remote: 
+To https://github.com/amiana666/astonlab.git
+ * [new branch]      2-issue-sql -> 2-issue-sql
+branch '2-issue-sql' set up to track 'origin/2-issue-sql'.
+vboxuser@Amireizel:~/hwlab/astonlab$ git push
+Username for 'https://github.com': amiana666
+Password for 'https://amiana666@github.com': 
+Everything up-to-date
+## Делаем Pull requests
+Pull requests -> New pull requests
 
 
 
