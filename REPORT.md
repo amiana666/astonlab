@@ -170,6 +170,7 @@ To https://github.com/amiana666/astonlab.git
 ## На github делаем merge request по ветке в develop
 Во вкладке Pull requests -> New pull requests -> Мерджим с выбором веток: источник -> цель
 ## Создаем issue + ветка в самом гитхаб
+<<<<<<< HEAD
 Issues -> New issue
 vboxuser@Amireizel:~/hwlab/astonlab$ git pull
 remote: Enumerating objects: 1, done.
@@ -222,7 +223,4 @@ Password for 'https://amiana666@github.com':
 Everything up-to-date
 ## Делаем Pull requests
 Pull requests -> New pull requests
-
-
-
 
