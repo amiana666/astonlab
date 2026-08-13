@@ -170,7 +170,57 @@ To https://github.com/amiana666/astonlab.git
 ## На github делаем merge request по ветке в develop
 Во вкладке Pull requests -> New pull requests -> Мерджим с выбором веток: источник -> цель
 ## Создаем issue + ветка в самом гитхаб
+<<<<<<< HEAD
+Issues -> New issue
+vboxuser@Amireizel:~/hwlab/astonlab$ git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 910 bytes | 910.00 KiB/s, done.
+From https://github.com/amiana666/astonlab
+   ecc423f..8abdbf0  develop    -> origin/develop
+Already up to date.
+vboxuser@Amireizel:~/hwlab/astonlab$ git checkout -b 2-issue-sql
+Switched to a new branch '2-issue-sql'
+vboxuser@Amireizel:~/hwlab/astonlab$ touch my_file.sql
+vboxuser@Amireizel:~/hwlab/astonlab$ git status
+On branch 2-issue-sql
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   REPORT.md
 
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	my_file.sql
 
-
+no changes added to commit (use "git add" and/or "git commit -a")
+vboxuser@Amireizel:~/hwlab/astonlab$ git add .
+vboxuser@Amireizel:~/hwlab/astonlab$ git commit -m "add my_file.sql"
+[2-issue-sql ef7cb13] add my_file.sql
+ 2 files changed, 46 insertions(+)
+ create mode 100644 my_file.sql
+vboxuser@Amireizel:~/hwlab/astonlab$ git push --set-upstream origin 2-issue-sql
+Username for 'https://github.com': amiana666
+Password for 'https://amiana666@github.com': 
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 1.10 KiB | 1.10 MiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for '2-issue-sql' on GitHub by visiting:
+remote:      https://github.com/amiana666/astonlab/pull/new/2-issue-sql
+remote: 
+To https://github.com/amiana666/astonlab.git
+ * [new branch]      2-issue-sql -> 2-issue-sql
+branch '2-issue-sql' set up to track 'origin/2-issue-sql'.
+vboxuser@Amireizel:~/hwlab/astonlab$ git push
+Username for 'https://github.com': amiana666
+Password for 'https://amiana666@github.com': 
+Everything up-to-date
+## Делаем Pull requests
+Pull requests -> New pull requests
 
