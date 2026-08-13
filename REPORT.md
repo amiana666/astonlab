@@ -124,6 +124,52 @@ vboxuser@Amireizel:~/hwlab$ cd astonlab/
 vboxuser@Amireizel:~/hwlab/astonlab$ ls
 README.md  REPORT.md
 ## Коммитим последние изменения и пушим в удаленный репозиторий
+vboxuser@Amireizel:~/hwlab/astonlab$ git add .
+vboxuser@Amireizel:~/hwlab/astonlab$ git push --set-upstream origin introduction_to_linux
+Username for 'https://github.com': amiana666
+Password for 'https://amiana666@github.com': 
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'introduction_to_linux' on GitHub by visiting:
+remote:      https://github.com/amiana666/astonlab/pull/new/introduction_to_linux
+remote: 
+To https://github.com/amiana666/astonlab.git
+ * [new branch]      introduction_to_linux -> introduction_to_linux
+branch 'introduction_to_linux' set up to track 'origin/introduction_to_linux'.
+vboxuser@Amireizel:~/hwlab/astonlab$ git status
+On branch introduction_to_linux
+Your branch is up to date with 'origin/introduction_to_linux'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   .gitignore
+	modified:   README.md
+	new file:   REPORT.md
+
+vboxuser@Amireizel:~/hwlab/astonlab$ git commit -m "feat: add issue-branch"
+[introduction_to_linux 4e9d809] feat: add issue-branch
+ 3 files changed, 384 insertions(+), 1 deletion(-)
+ create mode 100644 REPORT.md
+vboxuser@Amireizel:~/hwlab/astonlab$ git status
+On branch introduction_to_linux
+Your branch is ahead of 'origin/introduction_to_linux' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+vboxuser@Amireizel:~/hwlab/astonlab$ git push
+Username for 'https://github.com': amiana666
+Password for 'https://amiana666@github.com': 
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 6.72 KiB | 6.72 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/amiana666/astonlab.git
+   ecc423f..4e9d809  introduction_to_linux -> introduction_to_linux
+## На github делаем merge request по ветке в develop
+Во вкладке Pull requests -> New pull requests -> Мерджим с выбором веток: источник -> цель
+## Создаем issue + ветка в самом гитхаб
 
 
 
